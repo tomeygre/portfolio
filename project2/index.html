@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Identity • Minimalist Visual Identity</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="p2-nav">
+    <a href="../index.html" class="brand"><i class="ri-arrow-left-line" aria-hidden="true"></i> Back to Portfolio</a>
+    <span class="spacer"></span>
+    <a class="cta" href="#deliverables">Deliverables</a>
+  </header>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <h1>Brand Identity</h1>
+      <p class="sub">Minimalist logo and visual identity</p>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        A clean, timeless identity focused on clarity and restraint. The system embraces purposeful whitespace,
+        strong typography, and a limited palette for a premium, modern feel.
+      </p>
+      <ul class="meta">
+        <li><i class="ri-user-3-line" aria-hidden="true"></i> Role: Designer</li>
+        <li><i class="ri-tools-line" aria-hidden="true"></i> Tools: Figma, Illustrator</li>
+        <li><i class="ri-palette-line" aria-hidden="true"></i> Palette: Charcoal, Ivory, Gold</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80" alt="Logo concept on device" />
+        <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?auto=format&fit=crop&w=900&q=80" alt="Stationery mockup" />
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Typeface and layout" />
+        <img src="https://images.unsplash.com/photo-1524169342047-67dcbb77a8a8?auto=format&fit=crop&w=900&q=80" alt="Pattern and grid" />
+      </div>
+    </div>
+  </section>
+
+  <section id="deliverables" class="section">
+    <div class="container">
+      <h2>Deliverables</h2>
+      <ul class="deliverables">
+        <li><i class="ri-shapes-line" aria-hidden="true"></i> Primary logo (SVG, PNG)</li>
+        <li><i class="ri-shapes-fill" aria-hidden="true"></i> Secondary mark and favicon</li>
+        <li><i class="ri-font-size-2" aria-hidden="true"></i> Typography styles (H1–Body)</li>
+        <li><i class="ri-color-filter-line" aria-hidden="true"></i> Color palette + usage</li>
+        <li><i class="ri-layout-6-line" aria-hidden="true"></i> Basic brand guidelines PDF</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="p2-footer">© <span id="year"></span> Brand Identity</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

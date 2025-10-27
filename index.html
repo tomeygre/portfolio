@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="light dark"/>
+  <title>Thomas Lambrou | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- GSAP Libraries -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Removed ScrollTrigger and ScrollToPlugin -->
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="preloader-inner">
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="brand-mark">Thomas <span class="highlight">Lambrou</span></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar removed -->
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <a href="#hero">Thomas Lambrou</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="https://www.linkedin.com/in/thomas-l-11ba4ab8/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/tomeygre" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <i class="ri-github-fill"></i>
+        </a>
+        <button id="modeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </button>
+        <button id="soundToggle" class="sound-toggle" aria-label="Toggle Ambient Sound">
+          <i class="ri-volume-up-line" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-layer layer-a" aria-hidden="true"></div>
+    <div class="hero-layer layer-b" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Thomas Lambrou</span></h1>
+      <h3 id="typing"></h3>
+      <div class="btn-group">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <img
+        class="about-photo"
+        src="./profile.jpg"
+        alt="Minimal portrait"
+        width="120" height="120" loading="lazy"
+      />
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m an <strong>IT Support Engineer</strong> with a strong passion for <strong>technology</strong>, <strong>problem-solving</strong>, and <strong>continuous learning</strong>. I have a background in <strong>Web Development</strong> and <strong>Video Game Design</strong>, which has given me a creative edge and a solid foundation in both technical and user-focused thinking.
+
+Outside of work, I love to <strong>code in my free time</strong>, exploring new tools, frameworks, and personal projects that help me grow as a developer. Whether it’s <strong>troubleshooting complex systems</strong> or <strong>building something from scratch</strong>, I enjoy turning challenges into efficient, well-crafted solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+
+    <div class="filters">
+      <button class="filter-btn active btn" data-filter="all">All</button>
+      <button class="filter-btn btn" data-filter="web">Web</button>
+      <button class="filter-btn btn" data-filter="design">Design</button>
+    </div>
+
+    <div class="projects-grid"><!-- Populated by script.js --></div>
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-grid" aria-label="Technical skills">
+        <li class="skill-pill"><i class="ri-html5-fill" aria-hidden="true"></i>HTML</li>
+        <li class="skill-pill"><i class="ri-css3-fill" aria-hidden="true"></i>CSS</li>
+        <li class="skill-pill"><i class="ri-javascript-fill" aria-hidden="true"></i>JavaScript</li>
+        <li class="skill-pill"><i class="ri-reactjs-fill" aria-hidden="true"></i>React</li>
+        <li class="skill-pill"><i class="ri-nodejs-fill" aria-hidden="true"></i>Node.js</li>
+        <li class="skill-pill"><i class="ri-database-2-fill" aria-hidden="true"></i>Databases</li>
+        <li class="skill-pill"><i class="ri-git-branch-fill" aria-hidden="true"></i>Git</li>
+        <li class="skill-pill"><i class="ri-terminal-box-line" aria-hidden="true"></i>CLI</li>
+        <li class="skill-pill"><i class="ri-smartphone-line" aria-hidden="true"></i>Responsive</li>
+        <li class="skill-pill"><i class="ri-layout-2-line" aria-hidden="true"></i>UI/UX</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-wrapper">
+      <h2>Get in Touch</h2>
+      <p class="contact-sub">Let’s collaborate or just say hello 👋</p>
+
+      <div class="contact-card">
+        <aside class="contact-info">
+          <h3>Contact Details</h3>
+          <ul class="contact-details">
+            <li>
+              <i class="ri-mail-line"></i>
+              <a href="mailto:hello@example.com">thomaslambrou@work.com</a>
+            </li>
+            <li>
+              <i class="ri-map-pin-2-line"></i>
+              <span>Based in Heraklion, GR</span>
+            </li>
+            <li>
+              <i class="ri-linkedin-box-fill"></i>
+              <a href="https://www.linkedin.com/in/thomas-l-11ba4ab8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <i class="ri-github-fill"></i>
+              <a href="https://github.com/tomeygre" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+          <p class="contact-note">I usually reply within 1–2 business days.</p>
+        </aside>
+
+        <div class="form-side">
+          <form id="contactForm" class="contact-form" autocomplete="off">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder=" " />
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form-group full">
+              <textarea id="message" rows="6" required placeholder=" "></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn send-btn">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Thomas Lambrou. All Rights Reserved.
+  </footer>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

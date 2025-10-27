@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #666;
+  --bg: #faf9f7;
+  --card: #ffffff;
+  --gold: #b19777;
+}
+
+html, body { margin: 0; padding: 0; font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+
+.p2-nav {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 20px; background: rgba(255,255,255,0.85); backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.p2-nav .brand { color: var(--ink); text-decoration: none; font-weight: 600; }
+.p2-nav .brand i { margin-right: 6px; }
+.p2-nav .spacer { flex: 1; }
+.p2-nav .cta { color: var(--gold); text-decoration: none; font-weight: 600; }
+
+.hero { min-height: 52vh; display: grid; place-items: center; text-align: center; background: linear-gradient(180deg, #ffffff, #f5efe7); }
+.hero-inner { padding: 40px 20px; }
+.hero h1 { margin: 0 0 8px 0; font-size: 2.4rem; }
+.hero .sub { margin: 0; color: var(--muted); }
+
+.section { padding: 60px 20px; }
+.container { max-width: 1100px; margin: 0 auto; }
+.section h2 { margin: 0 0 16px 0; color: var(--gold); }
+.section p { color: var(--ink); line-height: 1.7; }
+
+.meta { list-style: none; padding: 0; margin: 16px 0 0 0; display: grid; gap: 8px; color: var(--muted); }
+.meta li i { color: var(--gold); margin-right: 6px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.grid img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+
+.deliverables { list-style: none; padding: 0; margin: 8px 0 0 0; display: grid; gap: 8px; }
+.deliverables li { background: var(--card); border: 1px solid rgba(0,0,0,0.06); padding: 12px 14px; border-radius: 12px; display: flex; align-items: center; gap: 10px; }
+.deliverables i { color: var(--gold); }
+
+.p2-footer { text-align: center; padding: 24px; color: var(--muted); }
+
